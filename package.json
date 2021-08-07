@@ -1,15 +1,15 @@
 {
   "name": "simplify-icon",
   "version": "0.0.1",
-  "description": "Icon font",
-  "main": "dist/font/simplify-icon.css",
+  "description": "Simplify Icon font",
+  "main": "dist/fonts/simplify-icon.css",
   "dependencies": {
-    "icon-font-generator": "^2.1.11"
+    "fantasticon": "^1.2.2"
   },
   "devDependencies": {},
   "scripts": {
-    "deploy": "icon-font-generator src/*.svg -o dist/font -n simplify-icon -p simplify"
-  },
+    "deploy": "fantasticon -o dist/fonts -n simplify-icon -p simplify"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SimonMarcelLinden/simplify-icon.git"
@@ -20,7 +20,9 @@
     "Simplify-Icon",
     "icons",
     "css",
-    "fonts"
+    "fonts",
+    "scss",
+    "sass"
   ],
   "author": "Simon Marcel Linden",
   "license": "ISC",
