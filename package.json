@@ -1,0 +1,31 @@
+{
+  "name": "simplify-icon",
+  "version": "0.0.1",
+  "description": "Icon font",
+  "main": "dist/font/simplify-icon.css",
+  "dependencies": {
+    "icon-font-generator": "^2.1.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "icon-font-generator src/*.svg -o dist/font -n simplify-icon -p simplify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonMarcelLinden/simplify-icon.git"
+  },
+  "keywords": [
+    "Simplify-CSS",
+    "Simplify-Vue",
+    "Simplify-Icon",
+    "icons",
+    "css",
+    "fonts"
+  ],
+  "author": "Simon Marcel Linden",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonMarcelLinden/simplify-icon/issues"
+  },
+  "homepage": "https://github.com/SimonMarcelLinden/simplify-icon#readme"
+}
