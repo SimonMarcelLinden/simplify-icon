@@ -8,8 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "deploy": "fantasticon -o dist/fonts -n simplify-icon -p simplify"
-},
+    "deploy": "fantasticon"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SimonMarcelLinden/simplify-icon.git"

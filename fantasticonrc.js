@@ -1,9 +1,12 @@
 module.exports = {
-    inputDir: './src', // (required)
+  name: 'simplify-icon',
+    inputDir: './src/icons', // (required)
     outputDir: './dist/fonts', // (required)
     fontTypes: ['ttf', 'woff', 'woff2', 'eot', 'svg'],
     assetTypes: ['ts', 'css', 'scss', 'sass', 'json', 'html'],
-    fontsUrl: '/fonts',
+    fontsUrl: '.',
+    tag: 'i',
+    prefix: 'simplify',
     formatOptions: {
       // Pass options directly to `svgicons2svgfont`
       woff: {
