@@ -6,6 +6,9 @@
   "dependencies": {
     "fantasticon": "^1.2.2"
   },
+  "files": [
+    "dist/*"
+  ],
   "devDependencies": {},
   "scripts": {
     "deploy": "fantasticon"
