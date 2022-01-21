@@ -24,6 +24,11 @@ module.exports = {
         singleQuotes: true
       }
     },
+    templates: {
+      css: './templates/css.hbs',
+      scss: './templates/scss.hbs',
+      sass: './templates/sass.hbs'
+    },
     // Customize generated icon IDs (unavailable with `.json` config file)
     // getIconId: ({
     //   basename, // `string` - Example: 'foo';
