@@ -6,7 +6,7 @@ module.exports = {
     assetTypes: ['ts', 'css', 'scss', 'sass', 'json', 'html'],
     fontsUrl: '.',
     tag: 'i',
-    prefix: 'simplify',
+    prefix: 'si',
     formatOptions: {
       // Pass options directly to `svgicons2svgfont`
       woff: {
