@@ -1,0 +1,47 @@
+${{ name }}-font: "{{ name }}";
+
+@font-face {
+    font-family : ${{ name }}-font;
+    src         : {{{ fontSrc }}};
+    font        : {
+        weight  : normal;
+        style   : normal
+    }
+}
+
+{{# if selector }}
+{{ selector }}:before {
+{{ else }}
+.{{prefix}} {
+{{/ if }}
+    font        : {
+        family  : simplify-icon;
+        style   : normal;
+        variant : {
+            ligatures   : normal;
+            caps        : normal;
+            numeric     : normal;
+            east-asian  : normal;
+        }
+        weight  : normal;
+        stretch : normal;
+        size    : inherit;
+    };
+    line-height : 1;
+}
+
+${{ name }}-map: (
+{{# each codepoints }}
+    "{{ @key }}": "\\{{ codepoint this }}",
+{{/ each }}
+);
+
+{{# each codepoints }}
+{{# if ../selector }}
+{{ ../selector }}.{{ ../prefix }}-{{ @key }}:before {
+{{ else }}
+{{ tag }}.{{ ../prefix }}-{{ @key }}:before {
+{{/ if }}
+    content: map-get(${{ ../name }}-map, "{{ @key }}");
+}
+{{/ each }}
