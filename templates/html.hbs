@@ -55,16 +55,14 @@
 
     <h1>{{ name }}</h1>
 
-    {{# each assets }}
-
+    {{# each codepoints }}
         <div class="preview">
             <span class="inner">
                 <{{ ../tag }} class="{{ ../prefix }} {{ ../prefix }}-{{ @key }}"></{{ ../tag }}>
             </span>
-            <br>
-            <span class='label'>{{ @key }}</span>
+            <span class='label'>{{ @key }} </span>
+            <span class='label'>{{ codepoint this }}</span>
         </div>
-
     {{/ each }}
 
 </body>
