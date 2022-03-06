@@ -27,7 +27,8 @@ module.exports = {
     templates: {
       css: './templates/css.hbs',
       scss: './templates/scss.hbs',
-      sass: './templates/sass.hbs'
+      sass: './templates/sass.hbs',
+      html: './templates/html.hbs'
     },
     // Customize generated icon IDs (unavailable with `.json` config file)
     // getIconId: ({
